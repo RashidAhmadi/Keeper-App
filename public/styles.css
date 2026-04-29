@@ -8,7 +8,7 @@ html {
 }
 body {
   background: #eee;
-  padding: 0 16px;
+  padding: 0 0px;
 }
 
 header {
@@ -23,7 +23,24 @@ header h1 {
   font-family: "McLaren", cursive;
   font-weight: 200;
 }
+.navbar {
+  background: #f5ba13;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar li {
+  cursor: pointer;
+}
 footer {
   position: absolute;
   text-align: center;
