@@ -3,12 +3,10 @@ import Card from "../components/Card"
 import { useEffect } from "react";
 import contacts from "../contacts";
 function Contact() {
-  useEffect(() => {
-    document.body.className = "contact-body";
-  }, []);
+  
   return (
-    <div>
-      <h1 className="heading">My Contacts</h1>
+    <div className="contact-body">
+      <h1 className="heading">Contact Our Team</h1>
       <Card
       name={contacts[0].name}
       img={contacts[0].imgURL}
