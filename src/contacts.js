@@ -20,6 +20,7 @@ const contacts = [
     phone: "+918 372 574",
     email: "gmail@chucknorris.com"
   }
+  
 ];
 
 export default contacts;
