@@ -1,6 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import Note from "../components/Note";
+import notes from "../notes";
+
+
 function Home() {
     useEffect(() => {
         document.body.className = "home-body";
@@ -9,7 +12,14 @@ function Home() {
   return (
     <div style={{ padding: "30px" }}>
       <h1>Welcome to Keeper</h1>
-      <Note/>
+      {notes.map(note=>{
+    return (
+        <Note 
+        key={note.key}
+        title={note.title}
+        content={note.content}
+    />);
+})}
     </div>
   );
 }
